@@ -10,6 +10,8 @@ banner = """ __    _____ _____ ____  _____ _____
 
 
 """
+os.system("clear")
+print(banner)
 
 if os.path.exists(".key"):
      key = open('.key',mode='r').read()
