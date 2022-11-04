@@ -2,16 +2,9 @@ import os
 import sys
 import requests
 
-banner = """ __    _____ _____ ____  _____ _____ 
-|  |  |     |  _  |    \|   __| __  |
-|  |__|  |  |     |  |  |   __|    -|
-|_____|_____|__|__|____/|_____|__|__|
-\033[1;97m\033[1;44m     LOADER SCRIPT     \033[0;00m                              
-
-
-"""
-os.system("clear")
-print(banner)
+GREEN = "\033[1;32m"
+RED = "\033[1;91m"
+WHITE = "\033[1;97m"
 
 if os.path.exists(".key"):
      key = open('.key',mode='r').read()
@@ -19,14 +12,14 @@ if os.path.exists(".key"):
      if key in str(l):
           pass
      else:
-          print("[!] Key expired, please get new key!")
-          print("[!] Please re-run script!")
+          print(f"{WHITE}[{RED}!{WHITE}] Key expired, please get new key!")
+          print("{WHITE}[{RED}!{WHITE}] Please re-run script!")
           os.remove(".key")
           sys.exit()
 
 if not os.path.exists(".key"):
-     print("[-] Get Free Key : https://safelink.id/K1IxUaqN")
-     input_key = input("\n[-] Enter Key : ")
+     print("{WHITE}[{GREEN}-{WHITE}] Get Free Key : https://safelink.id/K1IxUaqN")
+     input_key = input("\n{WHITE}[{GREEN}-{WHITE}] Enter Key : ")
      with open(".key","w") as f:
           f.write(input_key)
      
@@ -38,6 +31,6 @@ if not os.path.exists(".key"):
      
      else:
           print("[!] Key wrong!")
-          print("[!] Please re-run script!")
+          print("{WHITE}[{RED}!{WHITE}] Please re-run script!")
           os.remove(".key")
           sys.exit()
