@@ -15,7 +15,7 @@ if os.path.exists(".key"):
           sys.exit()
 
 if not os.path.exists(".key"):
-     print(f"[\033[1;32m-\033[1;97m] Get Free Key : https://safelink.id/K1IxUaqN")
+     print(f"[-] Get Free Key : https://safelink.id/K1IxUaqN")
      input_key = input(f"\n[-] Enter Key : ")
      with open(".key","w") as f:
           f.write(input_key)
