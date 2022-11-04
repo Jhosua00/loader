@@ -18,8 +18,8 @@ if os.path.exists(".key"):
           sys.exit()
 
 if not os.path.exists(".key"):
-     print(f"{WHITE}[{GREEN}-{WHITE}] Get Free Key : https://safelink.id/K1IxUaqN")
-     input_key = input("\n{WHITE}[{GREEN}-{WHITE}] Enter Key : ")
+     print(f"{WHITE}[{GREEN}-{WHITE}] Get Free Key : {GREEN}https://safelink.id/K1IxUaqN")
+     input_key = input(f"\n{WHITE}[{GREEN}-{WHITE}] Enter Key : ")
      with open(".key","w") as f:
           f.write(input_key)
      
