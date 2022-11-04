@@ -2,15 +2,17 @@ import os
 import sys
 import requests
 
+
 if os.path.exists(".key"):
      key = open('.key',mode='r').read()
      l = requests.get("https://pastebin.com/raw/MpFtYBWq").text
      if key in str(l):
-          print(sys.argv[1])
+          pass
      else:
           print("[!] Key expired, please get new key!")
           print("[!] Please re-run script!")
           os.remove(".key")
+          sys.exit()
 
 if not os.path.exists(".key"):
      print("[-] Get Free Key : ")
@@ -21,9 +23,11 @@ if not os.path.exists(".key"):
      key_auth = open(".key","r").read()
      p_l = requests.get("https://pastebin.com/raw/MpFtYBWq").text
      if key_auth in str(p_l):
-          print(sys.argv[1])
+          pass
+          #os.system(f"cyptofy {sys.argv[1]}")
      
      else:
           print("[!] Key wrong!")
           print("[!] Please re-run script!")
           os.remove(".key")
+          sys.exit()
