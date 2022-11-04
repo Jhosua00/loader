@@ -6,7 +6,8 @@ if os.path.exists(".key"):
      key = open('.key',mode='r').read()
      l = requests.get("https://pastebin.com/raw/MpFtYBWq").text
      if key in str(l):
-          os.system(f"cyptofy {sys.argv[1]}")
+          print(sys.argv[1])
+          #os.system(f"cyptofy {sys.argv[1]}")
      else:
           print("[!] Key expired, please get new key!")
           print("[!] Please re-run script!")
