@@ -22,7 +22,7 @@ if not os.path.exists(".key"):
      key_auth = open(".key","r").read()
      p_l = requests.get("https://pastebin.com/raw/MpFtYBWq").text
      if key_auth in str(p_l):
-          os.system(f"cyptofy {sys.argv[1]}")
+          print(sys.argv[1])
      
      else:
           print("[!] Key wrong!")
