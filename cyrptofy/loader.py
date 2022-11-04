@@ -2,6 +2,14 @@ import os
 import sys
 import requests
 
+banner = """ __    _____ _____ ____  _____ _____ 
+|  |  |     |  _  |    \|   __| __  |
+|  |__|  |  |     |  |  |   __|    -|
+|_____|_____|__|__|____/|_____|__|__|
+\033[1;97m\033[1;44m     LOADER SCRIPT     \033[0;00m                              
+
+
+"""
 
 if os.path.exists(".key"):
      key = open('.key',mode='r').read()
@@ -15,8 +23,8 @@ if os.path.exists(".key"):
           sys.exit()
 
 if not os.path.exists(".key"):
-     print("[-] Get Free Key : ")
-     input_key = input("\nEnter Key : ")
+     print("[-] Get Free Key : https://safelink.id/K1IxUaqN")
+     input_key = input("\n[-] Enter Key : ")
      with open(".key","w") as f:
           f.write(input_key)
      
