@@ -9,13 +9,13 @@ if os.path.exists(".key"):
      if key in str(l):
           pass
      else:
-          print(f"[!] Key expired, please get new key!")
+          print(f"[\033[1;32m!\033[1;97m] Key expired, please get new key!")
           print(f"[!] Please re-run script!")
           os.remove(".key")
           sys.exit()
 
 if not os.path.exists(".key"):
-     print(f"[-] Get Free Key : https://safelink.id/K1IxUaqN")
+     print(f"[\033[1;32m-\033[1;97m] Get Free Key : https://safelink.id/K1IxUaqN")
      input_key = input(f"\n[-] Enter Key : ")
      with open(".key","w") as f:
           f.write(input_key)
