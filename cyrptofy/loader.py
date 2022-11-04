@@ -13,12 +13,12 @@ if os.path.exists(".key"):
           pass
      else:
           print(f"{WHITE}[{RED}!{WHITE}] Key expired, please get new key!")
-          print("{WHITE}[{RED}!{WHITE}] Please re-run script!")
+          print(f"{WHITE}[{RED}!{WHITE}] Please re-run script!")
           os.remove(".key")
           sys.exit()
 
 if not os.path.exists(".key"):
-     print("{WHITE}[{GREEN}-{WHITE}] Get Free Key : https://safelink.id/K1IxUaqN")
+     print(f"{WHITE}[{GREEN}-{WHITE}] Get Free Key : https://safelink.id/K1IxUaqN")
      input_key = input("\n{WHITE}[{GREEN}-{WHITE}] Enter Key : ")
      with open(".key","w") as f:
           f.write(input_key)
@@ -31,6 +31,6 @@ if not os.path.exists(".key"):
      
      else:
           print("[!] Key wrong!")
-          print("{WHITE}[{RED}!{WHITE}] Please re-run script!")
+          print(f"{WHITE}[{RED}!{WHITE}] Please re-run script!")
           os.remove(".key")
           sys.exit()
